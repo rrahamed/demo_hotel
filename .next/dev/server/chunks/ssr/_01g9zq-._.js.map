@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/DEMO/hotel/src/app/layout.tsx"],"sourcesContent":["import './globals.css';\nimport '../components/Navbar.css';\nimport '../components/Hero.css';\nimport '../components/About.css';\nimport '../components/Amenities.css';\nimport '../components/Rooms.css';\nimport '../components/Gallery.css';\nimport '../components/BookingModal.css';\n\nexport const metadata = {\n  title: 'Point of Dev Hotel',\n  description: 'Premium Hotel Web Experience',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body>{children}</body>\n    </html>\n  );\n}\n"],"names":["metadata","title","description","RootLayout","children","lang"],"mappings":";;;;;;;;;;;;;;;;AASO,MAAMA,WAAW;IACtBC,OAAO;IACPC,aAAa;AACf;AAEe,SAASC,WAAW,EACjCC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAKC,MAAK;kBACT,cAAA,8OAAC;sBAAMD;;;;;;;;;;;AAGb"}},
-    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":["file:///D:/DEMO/hotel/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
