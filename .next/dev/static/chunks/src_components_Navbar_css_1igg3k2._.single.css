@@ -1,0 +1,135 @@
+/* [project]/src/components/Navbar.css [app-client] (css) */
+.navbar {
+  z-index: 100;
+  width: 100%;
+  padding: 2rem 0;
+  transition: all .4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar.scrolled, .navbar.menu-open {
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--glass-border);
+  background: #fafafae6;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  color: var(--primary-color);
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.logo h2 {
+  letter-spacing: 4px;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.logo span {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 5px;
+  font-size: .7rem;
+  transition: color .4s;
+}
+
+.nav-links {
+  gap: 3rem;
+  display: flex;
+}
+
+.nav-links a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.nav-links a:after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+}
+
+.nav-actions {
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.menu-toggle {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color .4s;
+  display: none;
+}
+
+.navbar.scrolled .logo span, .navbar.scrolled .nav-links a, .navbar.scrolled .menu-toggle, .navbar.menu-open .logo span, .navbar.menu-open .nav-links a, .navbar.menu-open .menu-toggle {
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background: #fafafafa;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    transition: clip-path .5s cubic-bezier(.86, 0, .07, 1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .nav-links a {
+    color: var(--text-light);
+  }
+
+  .nav-links.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .nav-book-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_css_1igg3k2._.single.css.map*/

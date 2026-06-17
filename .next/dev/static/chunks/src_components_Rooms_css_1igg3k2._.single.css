@@ -1,0 +1,129 @@
+/* [project]/src/components/Rooms.css [app-client] (css) */
+.rooms-section {
+  background-color: var(--bg-dark);
+  background-image: radial-gradient(circle, #b28f500d 0%, #0000 70%);
+  padding: 8rem 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rooms-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  display: grid;
+}
+
+.room-card {
+  height: 100%;
+}
+
+.room-card-inner {
+  background-color: #0000;
+  height: 100%;
+  transition: all .5s cubic-bezier(.16, 1, .3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.room-card-inner:hover {
+  transform: translateY(-10px);
+}
+
+.room-image-container {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+.room-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s;
+}
+
+.card-3d-wrapper:hover .room-image {
+  transform: scale(1.1);
+}
+
+.room-price {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: var(--primary-color);
+  border: 1px solid var(--glass-border);
+  background: #ffffffe6;
+  border-radius: 30px;
+  padding: .5rem 1rem;
+  font-family: Outfit, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.room-info {
+  background: var(--bg-dark);
+  z-index: 2;
+  padding: 2.5rem 1.5rem 1.5rem;
+  transition: all .3s;
+  position: relative;
+}
+
+.room-title {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.room-description {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.btn-secondary {
+  color: var(--text-light);
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: none;
+  border-radius: 0;
+  align-items: center;
+  gap: .5rem;
+  padding: 0 0 6px;
+  font-size: .8rem;
+  font-weight: 500;
+  transition: all .3s;
+  display: inline-flex;
+}
+
+.btn-secondary:hover {
+  color: var(--primary-color);
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=src_components_Rooms_css_1igg3k2._.single.css.map*/

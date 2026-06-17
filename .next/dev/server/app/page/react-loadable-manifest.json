@@ -1,0 +1,42 @@
+{
+  "[project]/src/components/About.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/About.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_next_0yf51rg._.js",
+      "static/chunks/src_components_About_tsx_16_u-f_._.js",
+      "static/chunks/src_components_About_tsx_1ywfygc._.js"
+    ]
+  },
+  "[project]/src/components/Amenities.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/Amenities.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_next_0yf51rg._.js",
+      "static/chunks/src_components_Amenities_tsx_06spndk._.js",
+      "static/chunks/src_components_Amenities_tsx_1ywfygc._.js"
+    ]
+  },
+  "[project]/src/components/Rooms.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/Rooms.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_next_0yf51rg._.js",
+      "static/chunks/src_components_Rooms_tsx_0s34_xr._.js",
+      "static/chunks/src_components_Rooms_tsx_1ywfygc._.js"
+    ]
+  },
+  "[project]/src/components/Gallery.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/Gallery.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_next_0yf51rg._.js",
+      "static/chunks/src_components_Gallery_tsx_1-yelpl._.js",
+      "static/chunks/src_components_Gallery_tsx_1ywfygc._.js"
+    ]
+  },
+  "[project]/src/components/BookingModal.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/BookingModal.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_048679_._.js",
+      "static/chunks/src_components_BookingModal_tsx_05_xcz2._.js",
+      "static/chunks/src_components_BookingModal_tsx_1ywfygc._.js"
+    ]
+  }
+}

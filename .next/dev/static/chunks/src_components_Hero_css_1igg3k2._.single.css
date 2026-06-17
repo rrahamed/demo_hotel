@@ -1,0 +1,147 @@
+/* [project]/src/components/Hero.css [app-client] (css) */
+.hero-container {
+  width: 100%;
+  height: 300vh;
+  position: relative;
+}
+
+.sticky-wrapper {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.hero-video-wrapper {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  z-index: 1;
+  background: linear-gradient(#0a0a0a66 0%, #0a0a0a1a 50%, #0a0a0acc 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  z-index: 2;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  position: relative;
+}
+
+.hero-text-wrapper {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.hero-subtitle {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-family: Outfit, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-title {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.gold-text {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.hero-description {
+  color: #fff;
+  opacity: .9;
+  max-width: 600px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 300;
+}
+
+.scroll-indicator {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  opacity: .6;
+  font-size: .75rem;
+}
+
+.mouse {
+  opacity: .6;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 26px;
+  height: 40px;
+  position: relative;
+}
+
+.wheel {
+  background-color: #fff;
+  border-radius: 2px;
+  width: 4px;
+  height: 8px;
+  animation: 1.5s infinite scroll;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translate(-50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 15px);
+  }
+}
+
+/*# sourceMappingURL=src_components_Hero_css_1igg3k2._.single.css.map*/
