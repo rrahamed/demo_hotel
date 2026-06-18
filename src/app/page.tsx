@@ -241,7 +241,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero" id="hero">
         <div className="hero-media" id="hero-media">
-          <video id="hero-video" autoPlay muted loop playsInline>
+          <video id="hero-video" autoPlay muted loop playsInline preload="auto">
             <source src="/Hotel_image_3D_animation_202606151533.mp4" type="video/mp4" />
           </video>
         </div>
