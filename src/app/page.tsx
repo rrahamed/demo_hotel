@@ -240,8 +240,8 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero" id="hero">
-        <div className="hero-media" id="hero-media">
-          <video id="hero-video" autoPlay muted loop playsInline preload="auto">
+        <div className="hero-media" id="hero-media" style={{ backgroundColor: "#050505" }}>
+          <video id="hero-video" autoPlay muted loop playsInline preload="auto" poster="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1920">
             <source src="/Hotel_image_3D_animation_202606151533.mp4" type="video/mp4" />
           </video>
         </div>
@@ -252,7 +252,7 @@ export default function Home() {
           </div>
           <h1 className="hero-title">
             <span className="ht-row"><span className="ht-clip">POINT</span></span>
-            <span className="ht-row indent"><em className="ht-clip">of Dev</em></span>
+            <span className="ht-row"><em className="ht-clip indent">of Dev</em></span>
             <span className="ht-row"><span className="ht-clip">HOTEL</span></span>
           </h1>
           <div className="hero-foot">

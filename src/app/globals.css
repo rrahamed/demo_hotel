@@ -93,9 +93,8 @@ input,select,textarea{cursor:text}
 .hero-tag{font-size:.8rem;letter-spacing:8px;color:var(--bronze-l);text-transform:uppercase;font-weight:700;text-shadow:0 2px 10px rgba(0,0,0,.5)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-weight:700;margin-top:.75rem;text-shadow:0 4px 20px rgba(0,0,0,.6)}
 .ht-row{display:block;overflow:hidden}
-.ht-clip{display:inline-block;font-size:clamp(5rem,12vw,10rem);line-height:.95;letter-spacing:-.02em;color:#fff;font-weight:700;will-change:transform}
-
-.ht-row .indent{font-size:clamp(3.5rem,9vw,7.5rem);color:var(--bronze-l);padding-left:5vw;font-weight:600}
+.ht-clip{display:inline-block;font-size:clamp(4rem,10vw,9.5rem);line-height:0.9;letter-spacing:-.02em;color:#fff;font-weight:700;will-change:transform}
+.ht-clip.indent{font-size:clamp(3rem,8vw,7rem);color:var(--bronze-l);padding-left:5vw;font-weight:400;font-style:italic;}
 .hero-foot{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:2.5rem;flex-wrap:wrap;gap:1.5rem}
 .hero-desc{font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,2vw,1.4rem);font-weight:300;color:rgba(255,255,255,.65);font-style:italic;line-height:1.5}
 .hero-foot-right{display:flex;align-items:center;gap:2.5rem}
@@ -262,8 +261,8 @@ input,select,textarea{cursor:text}
 }
 
 @media(max-width:599px){
-  .ht-clip{font-size:3.5rem}
-  .ht-row .indent{font-size:2.8rem;padding-left:2vw}
+  .ht-clip{font-size:clamp(2.8rem, 14vw, 4rem)}
+  .ht-clip.indent{font-size:clamp(2.2rem, 11vw, 3rem);padding-left:2vw}
   .hero-foot{flex-direction:column;align-items:flex-start;gap:1.5rem}
   .hero-foot-right{width:100%;justify-content:space-between}
   .am-grid{grid-template-columns:1fr}
