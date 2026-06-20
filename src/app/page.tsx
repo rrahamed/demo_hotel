@@ -31,20 +31,23 @@ export default function Home() {
     gsap.from(".hero-tag", { opacity: 0, y: 12, duration: 0.9, delay: 0.9 });
     gsap.from(".hero-foot", { opacity: 0, y: 18, duration: 0.9, delay: 1.25 });
 
-    // Hero Pinned Zoom-Out
-    const heroTl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        end: "+=700",
-        scrub: 1.5,
-        pin: true,
-        pinSpacing: true,
-      },
-    });
-    heroTl
-      .to("#hero-video", { scale: 1, ease: "power1.inOut" }, 0)
-      .to(".hero-body", { y: -65, opacity: 0, ease: "power2.in" }, 0.38);
+    // Hero Pinned Zoom-Out — desktop only
+    const isMobile = window.innerWidth < 600;
+    if (!isMobile) {
+      const heroTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".hero",
+          start: "top top",
+          end: "+=700",
+          scrub: 1.5,
+          pin: true,
+          pinSpacing: true,
+        },
+      });
+      heroTl
+        .to("#hero-video", { scale: 1, ease: "power1.inOut" }, 0)
+        .to(".hero-body", { y: -65, opacity: 0, ease: "power2.in" }, 0.38);
+    }
 
     // Scroll Reveals
     gsap.utils.toArray(".reveal-up").forEach((el: any) => {
